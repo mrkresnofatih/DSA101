@@ -97,4 +97,62 @@ public class Main {
         firstList.deleteAtIndex(6);
         firstList.displayLinkedList();
     }
+
+    public static void doSwitchCaseCase(){
+        int value = 7;
+        switch (value){
+            case    5:
+                System.out.println("value: 5");
+                break;
+            case    4:
+                System.out.println("value: 4");
+                break;
+            case    2:
+                System.out.println("value: 2");
+                break;
+            default:
+                System.out.println("default");
+                break;
+        }
+    }
+
+    public static void doIfElseCase(){
+        int val = 5;
+        if(val>8){
+            System.out.println(">8");
+        } else {
+            System.out.println("<=8");
+        }
+    }
+
+    public static void doDoWhileLoopCase(){
+        // do while
+        int value = 0;
+        do {
+            value++;
+            System.out.println("val: "+value);
+        } while (value<10);
+    }
+
+    public static void doWhileLoopCase(){
+        // while
+        int value = 0;
+        while(value<10){
+            value++;
+            System.out.println("val: "+value);
+        }
+    }
+
+    public static void doForLoopCase(){
+        for(int val=0; val<10; val++){
+            System.out.println(val+1);
+        }
+    }
+
+    public static void doForEachLoop(){
+        String[] foods = new String[] {"pisang", "apel", "mangga"};
+        for(String food : foods){
+            System.out.println(food);
+        }
+    }
 }
